@@ -11,6 +11,8 @@ import About from './routing/About';
 import Contact from './routing/Contact';
 import Navbar from './routing/Navbar';
 import DarkMode from './components/DarkMode';
+
+import UserContext from './contextAPI/UserContext';
 function App() {
   return (
     <>
@@ -29,7 +31,9 @@ function App() {
     </Router> */}
 
     {/* Dark mode Component */}
-    <DarkMode/>
+    {/* <DarkMode/> */}
+
+    <UserContext/>
     </>
     
   );
