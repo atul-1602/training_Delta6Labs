@@ -5,7 +5,7 @@
   "main": "RespopnseMethods.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node RespopnseMethods.js"
+    "start": "node httpPostMethod.js"
   },
   "keywords": [],
   "author": "",
