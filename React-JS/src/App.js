@@ -13,6 +13,9 @@ import Navbar from './routing/Navbar';
 import DarkMode from './components/DarkMode';
 
 import UserContext from './contextAPI/UserContext';
+import TodoList from './TodoList_Redux/TodoListUsingRedux';
+import todoStore from "./TodoList_Redux/store/Store"
+import { Provider } from 'react-redux';
 function App() {
   return (
     <>
@@ -33,7 +36,13 @@ function App() {
     {/* Dark mode Component */}
     {/* <DarkMode/> */}
 
-    <UserContext/>
+    {/* <UserContext/> */}
+
+    {/* Todo list using redux */}
+    <Provider  store={todoStore}>
+
+    <TodoList/>
+    </Provider>
     </>
     
   );
