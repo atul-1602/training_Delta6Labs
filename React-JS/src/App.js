@@ -19,6 +19,7 @@ import { Provider } from 'react-redux';
 
 import Header from './material_UI/HeaderFuntionalComponent';
 import UserForm from './material_UI/UserForm';
+import UserList from './material_UI/UserList';
 function App() {
   return (
     <>
@@ -49,7 +50,8 @@ function App() {
     
     {/* material UI */}
     {/* <Header/> */}
-    <UserForm/>
+    {/* <UserForm/> */}
+    <UserList/>
 
      
     </>
