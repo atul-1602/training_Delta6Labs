@@ -16,6 +16,8 @@ import UserContext from './contextAPI/UserContext';
 import TodoList from './TodoList_Redux/TodoListUsingRedux';
 import todoStore from "./TodoList_Redux/store/Store"
 import { Provider } from 'react-redux';
+
+import Header from './material_UI/HeaderFuntionalComponent';
 function App() {
   return (
     <>
@@ -39,10 +41,13 @@ function App() {
     {/* <UserContext/> */}
 
     {/* Todo list using redux */}
-    <Provider  store={todoStore}>
+    {/* <Provider  store={todoStore}>
 
     <TodoList/>
-    </Provider>
+    </Provider> */}
+    
+    {/* Header component using material UI */}
+    <Header/>
     </>
     
   );
