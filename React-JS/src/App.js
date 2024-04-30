@@ -20,6 +20,8 @@ import { Provider } from 'react-redux';
 import Header from './material_UI/HeaderFuntionalComponent';
 import UserForm from './material_UI/UserForm';
 import UserList from './material_UI/UserList';
+import APIData from './redux_thunk/APIData'
+import store from './redux_thunk/store'
 function App() {
   return (
     <>
@@ -51,8 +53,12 @@ function App() {
     {/* material UI */}
     {/* <Header/> */}
     {/* <UserForm/> */}
-    <UserList/>
+    {/* <UserList/> */}
 
+    {/* Redux Thunk */}
+    <Provider store={store}>
+     <APIData/>
+     </Provider>
      
     </>
     
